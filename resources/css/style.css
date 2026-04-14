@@ -1,0 +1,267 @@
+/* GLOBAL */
+:root {
+    color-scheme: light;
+    color: #1f2937;
+    background: #f8fafc;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #f8fafc;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+img,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+/* CONTAINER */
+.container {
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* TYPOGRAPHY */
+body,
+input,
+select,
+button,
+textarea {
+    font: 1rem/1.7 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 1rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #111827;
+}
+
+p,
+ul,
+ol,
+blockquote {
+    margin: 0 0 1.25rem;
+}
+
+/* FORM ELEMENTS */
+form {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.05);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.85rem;
+    background: #fafafa;
+    color: #111827;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.85rem;
+    background: #fafafa;
+    color: #111827;
+    font: inherit;
+}
+
+.mb-2 {
+    margin-bottom: 0.75rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.ms-2 {
+    margin-left: 0.5rem !important;
+}
+
+.d-flex {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.gap-2 {
+    gap: 0.75rem !important;
+}
+
+button,
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 1.4rem;
+    border-radius: 9999px;
+    border: 1px solid transparent;
+    background: #111827;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 180ms ease, transform 180ms ease;
+    font: inherit;
+}
+
+.btn-sm {
+    padding: 0.55rem 0.95rem;
+    font-size: 0.92rem;
+}
+
+.btn-primary {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.btn-secondary {
+    background: #6b7280;
+    border-color: #6b7280;
+}
+
+.btn-success {
+    background: #047857;
+    border-color: #047857;
+}
+
+.btn-danger {
+    background: #b91c1c;
+    border-color: #b91c1c;
+}
+
+button:hover,
+.btn:hover {
+    background: #374151;
+    transform: translateY(-1px);
+}
+
+button:disabled,
+.btn.disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.table td form {
+    display: inline-block;
+    margin: 0;
+}
+
+.table td .btn {
+    white-space: nowrap;
+}
+
+/* TABLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.05);
+}
+
+thead {
+    background: #f3f4f6;
+}
+
+table th,
+table td {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table th {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+table td {
+    color: #4b5563;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* STATUS */
+.paid {
+    color: #047857;
+    font-weight: 600;
+}
+
+.unpaid {
+    color: #b91c1c;
+    font-weight: 600;
+}
+
+/* ALERTS */
+.alert {
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid rgba(34, 197, 94, 0.15);
+    background: #ecfdf5;
+    color: #064e3b;
+}
+
+.alert-success {
+    background: #ecfdf5;
+    color: #065f46;
+    border-color: #10b981;
+}
+
+/* SMALL UTILITY */
+.text-success {
+    color: #047857;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.minimal-hidden {
+    display: none;
+}
